@@ -4,8 +4,8 @@
 Here we perform an analysis using `pandas` of rideshare datasets
 [city_data.csv](Resources/city_data.csv) of format `city,driver_count,type`
 and [ride_data.csv](Resources/ride_data.csv) of format
-`city,date,fare,ride_id` to determine the following for each city type (rural,
-suburban, or urban):
+`city,date,fare,ride_id` to determine the following for each rural, suburban,
+and urban cities:
 
 - Total Rides
 - Total Drivers
@@ -39,7 +39,7 @@ Breakdown of the total number of rides by city type:
 - Suburban: 625
 - Urban: 1,625
 
-We see the number of rides in urban cities is 13 times that of rural cities,
+The number of rides in urban cities is 13 times that of rural cities,
 which likely follows from a population difference of similar magnitude.
 
 ### Total Drivers
@@ -62,7 +62,7 @@ Breakdown of the total fare cost by city type:
 
 We find that urban cities provide approximately 63% of the total fares in this
 data. This roughly follows from January 2019 through April 2019 as shown in
-[Plot of Total Far by City Type](analysis/PyBer_fare_summary.png).
+[Plot of Total Fare by City Type](analysis/PyBer_fare_summary.png).
 
 ### Average Fare per Ride
 Breakdown of the average fare per ride by city type:
@@ -71,7 +71,7 @@ Breakdown of the average fare per ride by city type:
 - Suburban: $30.97
 - Urban: $24.53
 
-We see that while there are fewer rides in rural cities, here the average fare
+We see that while there are fewer rides in rural cities, the average fare
 per ride is greater than that of urban cities by a factor of roughly 1.4.
 
 ### Average Fare per Driver
@@ -81,9 +81,9 @@ Breakdown of the average fare per driver by city type:
 - Suburban: $39.50
 - Urban: $16.57
 
-While the total fares in urban cities is higher than that of urban and
-suburban ones, we see the total number of drivers plays a larger effect
-and causes the average fare per driver to be highest in rural cities.
+While the total fares in urban cities is higher than that of suburban and
+rural ones, we find the total number of drivers has a greater effect on the
+average fare per driver, causing it to be highest in rural cities.
 
 ## Summary
 This analysis shows that urban cities have higher rideshare activity
@@ -92,19 +92,19 @@ cities.
 
 ### Recommendations Based on City Differences
 We see in [Pyber Summary Dataframe](Resources/pyber_summary_df.png) that fares
-generated in urban cities make up 63% of the total fares in our data,
-indicating this form of transportation is used most often here. This is also
-shown from the significantly higher number of drivers in urban cities relative
-to other types. It is therefore advised to focus resources primarily in urban
-environments.
+generated in urban cities account for 63% of the total fares in our data,
+indicating it is this environment in which rideshare companies are most likely
+to find success. This is also shown from the significantly higher number of
+drivers in urban cities relative to other types. It is therefore advised to
+focus resources primarily in urban settings.
 
 We also see from
-[Plot of Total Far by City Type](analysis/PyBer_fare_summary.png) that late
-February to early March holds the largest total fares for each city type,
-indicating that this may be an ideal time to increase driver numbers to
-accommodate the increased demand.
+[Plot of Total Fare by City Type](analysis/PyBer_fare_summary.png) that late
+February to early March provide the largest total fares for each city type,
+suggesting this may be an ideal time to increase the number of drivers to
+accommodate this increased demand.
 
 Finally, we see that the month of March provides particularly low fares in
-suburban and rural cities. It therefore may be wise to remove resources from
-these types of cities at this time in order to offset this decline in urban
-environments.
+suburban and rural cities. It therefore may be wise to move resources from
+these types of cities to urban ones at this time in order to counter this
+decline.
