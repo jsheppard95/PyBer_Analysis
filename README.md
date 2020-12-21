@@ -1,5 +1,4 @@
 # PyBer_Analysis
-Jupyter Notebook for visualization of ride share data
 
 ## Overview of the analysis
 Here we perform an analysis using `pandas` of rideshare datasets
