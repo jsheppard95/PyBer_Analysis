@@ -4,7 +4,7 @@
 Here we perform an analysis using `pandas` of rideshare datasets
 [city_data.csv](Resources/city_data.csv) of format `city,driver_count,type`
 and [ride_data.csv](Resources/ride_data.csv) of format
-`city,date,fare,ride_id` to determine the following for each rural, suburban,
+`city,date,fare,ride_id` to determine the following for rural, suburban,
 and urban cities:
 
 - Total Rides
@@ -98,13 +98,13 @@ to find success. This is also shown from the significantly higher number of
 drivers in urban cities relative to other types. It is therefore advised to
 focus resources primarily in urban settings.
 
-We also see from
+We also find from
 [Plot of Total Fare by City Type](analysis/PyBer_fare_summary.png) that late
-February to early March provide the largest total fares for each city type,
+February to early March provide the highest total fares for each city type,
 suggesting this may be an ideal time to increase the number of drivers to
 accommodate this increased demand.
 
-Finally, we see that the month of March provides particularly low fares in
+Finally, we note that the month of March provides particularly low fares in
 suburban and rural cities. It therefore may be wise to move resources from
 these types of cities to urban ones at this time in order to counter this
 decline.
