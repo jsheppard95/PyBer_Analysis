@@ -61,7 +61,9 @@ Breakdown of the total fare cost by city type:
 - Suburban: $19,356.33
 - Urban: $39,854.38
 
-We find that urban cities provide roughly 63% of the total fares in this data.
+We find that urban cities provide approximately 63% of the total fares in this
+data. This roughly follows from January 2019 through April 2019 as shown in
+[Plot of Total Far by City Type](analysis/PyBer_fare_summary.png).
 
 ### Average Fare per Ride
 Breakdown of the average fare per ride by city type:
@@ -85,3 +87,25 @@ suburban ones, we see the total number of drivers plays a larger effect
 and causes the average fare per driver to be highest in rural cities.
 
 ## Summary
+This analysis shows that urban cities have higher rideshare activity
+producing a greater proportion of total fares relative to suburban and rural
+cities.
+
+### Recommendations Based on City Differences
+We see in [Pyber Summary Dataframe](Resources/pyber_summary_df.png) that fares
+generated in urban cities make up 63% of the total fares in our data,
+indicating this form of transportation is used most often here. This is also
+shown from the significantly higher number of drivers in urban cities relative
+to other types. It is therefore advised to focus resources primarily in urban
+environments.
+
+We also see from
+[Plot of Total Far by City Type](analysis/PyBer_fare_summary.png) that late
+February to early March holds the largest total fares for each city type,
+indicating that this may be an ideal time to increase driver numbers to
+accommodate the increased demand.
+
+Finally, we see that the month of March provides particularly low fares in
+suburban and rural cities. It therefore may be wise to remove resources from
+these types of cities at this time in order to offset this decline in urban
+environments.
